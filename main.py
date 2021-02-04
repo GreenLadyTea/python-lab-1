@@ -4,10 +4,10 @@ import random
 class Person:
     def __init__(self, name):
         self.name = name
-        self.age = random.randint(0, 100)
+        self.age = random.randrange(100)
 
 
-names = ['Scott', 'Fred', 'Ann', 'Dave', 'Clara', 'Sam', 'Alex', 'Greg', 'Christina', 'Mary', 'Jane', 'Layla']
+names = ['Scott', 'Fred', 'Ann', 'Dave', 'Clara', 'Sam', 'Alex', 'Greg', 'Christina', 'Mary', 'Jane', 'Layla', 'Lucy']
 quantity = input('Enter the number of people:')
 persons = []
 
@@ -32,7 +32,7 @@ print('Old people:')
 for person in old:
     print(person.name, person.age)
 
-
+print()
 print('Young people:')
 for person in young:
     print(person.name, person.age)
